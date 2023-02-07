@@ -15,8 +15,8 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 110px;
-    background: #fff;
+    width: 170px;
+    background: rgba(255, 255, 255, 0.9);
     margin-right: 20px;
     margin-bottom: 40px;
     padding: 10px 20px 10px 10px;
@@ -53,26 +53,28 @@ a {
     color: black
 }
 
-#title {
+#map-overlay {
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 0;
     left: 0;
     margin-top: 20px;
     margin-left: 20px;
+    width: 550px;
+    height: 120px;
+    border-radius: 3px;
+    padding: 10px 20px 10px 10px;
+}
+
+#title {
     font-family: 'Open Sans', sans-serif;
     font-size: 25pt;
-    color: white;
+    color: black;
 }
 
 
 #subtitle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 70px;
-    margin-left: 20px;
-    width: 550px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
-    color: white;
+    color: black;
 }

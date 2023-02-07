@@ -3,9 +3,9 @@ mapboxgl.accessToken =
 let map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/dark-v10',
-    zoom: 3, // starting zoom
+    zoom: 3.5, // starting zoom
     minZoom: 1, // minimum zoom level of the map
-    center: [-95, 37], // starting center
+    center: [-100, 40], // starting center
     projection: "albers"
 });
 const grades = [500, 3500, 5000, 10000, 100000],

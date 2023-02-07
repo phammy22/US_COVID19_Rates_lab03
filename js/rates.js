@@ -3,7 +3,7 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/light-v10', // style URL
-    zoom: 3, // starting zoom
+    zoom: 3.5, // starting zoom
     center: [-100, 40] // starting center
 });
 
@@ -74,7 +74,7 @@ async function geojsonFetch() {
 
         // create legend
         const legend = document.getElementById('legend');
-        legend.innerHTML = "<b>Rate of Cases<br>(cases/1k residents)</b><br><br>";
+        legend.innerHTML = "<b>Cases/1k residents</b><br><br>";
 
 
         layers.forEach((layer, i) => {
@@ -98,7 +98,7 @@ async function geojsonFetch() {
         });
         document.getElementById('text-description').innerHTML = state.length ?
         `<h3>${state[0].properties.county} County, ${state[0].properties.state}</h3><p><strong><em>${state[0].properties.rates}</strong> cases per 1,000 residents</em></p>` :
-        `<p>Hover over a state!</p>
+        `<p>Hover over a county to see their rate of cases per 1000 residents!</p>
         <p style="text-align: left; font-size:10pt">Source: <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv">NY Times</a></p>`;
 });
 }

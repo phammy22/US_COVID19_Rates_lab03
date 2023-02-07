@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>US COVID-19 Counts</title>
+    <title>US COVID-19 Cases</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
@@ -14,12 +14,14 @@
 <body>
     <div id="map"></div>
     <div id="legend"></div>
-    <div id="title">
-        US COVID-19 Counts
-    </div>
-    <div id="subtitle">
-        The following map displays COVID-19 cases by county with varying radii and colors for the year 2020.
-        To see the exact number of cases for each county, click on the radii.
+    <div id="map-overlay">
+        <div id="title">
+            US COVID-19 Cases
+        </div>
+        <div id="subtitle">
+            The following map displays COVID-19 cases by county with varying radii and colors for the year 2020.
+            To see the exact number of cases for each county, click on the radii.
+        </div>
     </div>
     <script src="js/counts.js"></script>
 
